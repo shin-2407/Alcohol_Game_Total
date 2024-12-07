@@ -15,7 +15,7 @@ Contents:
    :maxdepth: 2
    :caption: Game Descriptions:
 
-   useage
+   usage
    roulette_game
    guess_the_person_game
    pronunciation_game

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="ko" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Group Photo Analyzer Game &#8212; Alcohol_Game 0.1 문서</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=f0521829"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=afa94a99"></script>
+    <link rel="index" title="색인" href="genindex.html" />
+    <link rel="search" title="검색" href="search.html" />
+    <link rel="next" title="Receipt Calculator" href="receipt_calculator.html" />
+    <link rel="prev" title="Pronunciation Evaluation Game" href="pronunciation_game.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="group-photo-analyzer-game">
+<h1>Group Photo Analyzer Game<a class="headerlink" href="#group-photo-analyzer-game" title="Link to this heading">¶</a></h1>
+<p>“””
+그룹 사진에서 사람의 손 모양을 분석하여 랜덤으로 벌칙 대상을 선택하는 프로그램입니다.
+YOLO를 이용하여 사람을 감지하고, 손 모양에 따라 특징을 분석합니다.
+“””</p>
+<section id="id1">
+<h2>게임 특징:<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>YOLO 모델을 사용하여 그룹 사진에서 사람을 감지합니다.</p></li>
+<li><p>사람의 손 모양을 분석하여 랜덤으로 벌칙 대상을 선택합니다.</p></li>
+</ul>
+</section>
+<section id="id2">
+<h2>게임 진행:<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>사용자가 이미지를 업로드합니다.</p></li>
+<li><p>YOLO 모델이 이미지를 분석하고 사람을 감지합니다.</p></li>
+<li><p>감지된 사람의 손 모양에 따라 특징을 분석하고 랜덤으로 벌칙을 부여합니다.</p></li>
+</ol>
+</section>
+<section id="id3">
+<h2>코드:<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 그룹 사진 분석 게임 코드 설명</span>
+<span class="k">def</span> <span class="nf">analyze_group_photo</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">image_path</span><span class="p">,</span> <span class="n">mission</span><span class="p">,</span> <span class="n">confidence_threshold</span><span class="o">=</span><span class="mf">0.5</span><span class="p">):</span>
+    <span class="c1"># 그룹 사진을 분석하는 함수</span>
+    <span class="c1"># ... 코드 생략 ...</span>
+
+<span class="k">def</span> <span class="nf">select_image</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
+    <span class="c1"># 이미지를 선택하는 함수</span>
+    <span class="c1"># ... 코드 생략 ...</span>
+
+<span class="k">def</span> <span class="nf">start_analysis</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
+    <span class="c1"># 분석을 시작하는 함수</span>
+    <span class="c1"># ... 코드 생략 ...</span>
+
+
+<span class="c1"># 그룹 사진 분석 게임 코드 사용방법</span>
+<span class="n">tg</span> <span class="o">=</span> <span class="n">total_game</span><span class="p">()</span>
+<span class="n">tg</span><span class="o">.</span><span class="n">GroupPhotoAnalyzerApp</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="new_index.html">Alcohol_Game</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="이동" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>탐색</h3>
+<p class="caption" role="heading"><span class="caption-text">Game Descriptions:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="roulette_game.html">Roulette Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guess_the_person_game.html">Guess the Person Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pronunciation_game.html">Pronunciation Evaluation Game</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Group Photo Analyzer Game</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">게임 특징:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">게임 진행:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">코드:</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="receipt_calculator.html">Receipt Calculator</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="new_index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="pronunciation_game.html" title="이전 장">Pronunciation Evaluation Game</a></li>
+      <li>Next: <a href="receipt_calculator.html" title="다음 장">Receipt Calculator</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, shin.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/group_photo_analyzer_game.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

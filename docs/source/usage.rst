@@ -1,7 +1,13 @@
 Usage
 =====
 
-"To install Alcohol_Total_Game, run the following command"
+.. _installation:
 
-pip install Alcohol_Total_Game
+Installation
+------------
 
+To use Alcohol_Total_Game, first install it using pip:
+
+.. code-block:: console
+
+   (.venv) $ pip install Alcohol_Total_Game

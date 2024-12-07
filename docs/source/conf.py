@@ -19,7 +19,7 @@ extensions = []
 templates_path = ['_templates']
 exclude_patterns = []
 
-root_doc = 'new_index'
+master_doc = 'new_index'
 language = 'ko'
 
 # -- Options for HTML output -------------------------------------------------

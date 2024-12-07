@@ -7,7 +7,6 @@ build:
 
 sphinx:
   configuration: docs/source/conf.py
-  version: "5.0"
 
 python:
   install:
